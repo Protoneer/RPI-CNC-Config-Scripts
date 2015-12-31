@@ -1,4 +1,4 @@
-sudo apt-get -y install pip
+# sudo apt-get -y install pip
 sudo pip install pyserial --upgrade
 cd ~/Desktop
 mkdir bCNC
