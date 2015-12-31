@@ -1,2 +1,1 @@
-sudo apt-get update
-sudo apt-get upgrade
+./scripts/001-install-updates.sh
