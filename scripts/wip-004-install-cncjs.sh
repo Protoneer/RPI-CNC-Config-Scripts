@@ -1,1 +1,3 @@
-sudo npm install -g cncjs
+echo "prefix=~/.npm" >> ~/.npmrc
+cat ~/.npmrc
+npm install -g cncjs
