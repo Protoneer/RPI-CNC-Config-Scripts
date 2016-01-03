@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=CNC.JS
+Version=1.0
+Comment=Launches application
+Exec=/home/pi/.npm/bin/cnc
+Icon=/usr/share/pixmaps/openbox.xpm
+Terminal=false
+Type=Application
+Categories=Education
