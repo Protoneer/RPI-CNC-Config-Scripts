@@ -1,1 +1,4 @@
 ./scripts/001-install-updates.sh
+./scripts/002-install-utilities.sh
+./scripts/003-install-bCNC.sh
+./scripts/004-install-cncjs.sh
