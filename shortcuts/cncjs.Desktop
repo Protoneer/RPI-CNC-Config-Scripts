@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=CNC.JS
+Name=Start CNC.JS(Run once, wait for terminal window to open)
 Version=1.0
 Comment=Launches application
 Exec=/home/pi/.npm/bin/cnc
