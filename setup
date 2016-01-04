@@ -1,4 +1,7 @@
-./scripts/001-install-updates.sh
-./scripts/002-install-utilities.sh
-./scripts/003-install-bCNC.sh
-./scripts/004-install-cncjs.sh
+scripts/001-install-updates.sh
+scripts/002-install-utilities.sh
+scripts/003-install-bCNC.sh
+scripts/004-install-node.sh
+
+scripts/005-install-cncjs.sh
+scripts/006-copy-shortcuts.sh
