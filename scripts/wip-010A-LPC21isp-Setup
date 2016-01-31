@@ -1,0 +1,4 @@
+sudo apt-get install lpc21isp
+
+echo "18" > /sys/class/gpio/export
+echo "17" > /sys/class/gpio/export
