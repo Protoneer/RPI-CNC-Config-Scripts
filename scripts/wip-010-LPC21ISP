@@ -1,3 +1,0 @@
-sudo apt-get install lpc21isp
-#wget https://raw.githubusercontent.com/Smoothieware/Smoothieware/edge/bootloader/DFU-Bootloader.hex
-#lpc21isp -wipe DFU-Bootloader.hex /dev/ttyAMA0 230400 12000
