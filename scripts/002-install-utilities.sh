@@ -1,1 +1,1 @@
-sudo apt-get -y install minicom CuteCom xrdp
+sudo apt-get -y --force-yes install minicom CuteCom xrdp
