@@ -1,1 +1,1 @@
-cp -a shortcuts/. /home/pi/Desktop/
+cp -a ~/RPI-CNC-Config-Scripts/shortcuts/. /home/pi/Desktop/
