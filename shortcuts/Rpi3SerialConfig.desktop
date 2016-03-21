@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=RPi3 Serial Fix
+Comment=RPi3 Serial Fix
+Exec=sudo bash /home/pi/RPI-CNC-Config-Scripts/scripts/007-RPi3-Serial-Config.sh
+Icon=bCNC.png
+Terminal=true
+StartupNotify=false
