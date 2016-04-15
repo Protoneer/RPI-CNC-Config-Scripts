@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <% include ../partials/head %>
+  </head>
+
+  <body>
+
+    <header>
+        <% include ../partials/header %>
+    </header>
+  	
+	<!-- Begin page content -->
+	<div class="container">
+		<h1>Flash HEX file</h1>
+		<form method="post" enctype="multipart/form-data" id="UploadForm"  action="/upload">
+		  <input type="file" name="hexFile" />
+		  <button type="submit" id="btn">Upload And Flash</button>
+		</form>
+	 
+		<div id="response"></div>
+	</div>	
+
+    <footer class="footer">
+		<script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+		<% include ../partials/footer %>
+    </footer>
+  </body>
+</html>
