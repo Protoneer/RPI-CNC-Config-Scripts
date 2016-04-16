@@ -30,6 +30,6 @@ server.post('/flash', function (req, res) {
 	var results = exec('avrdude -v -c arduino -p ATMEGA328P -P /dev/ttyAMA0 -b 115200 -U flash:w:firmware.hex').toString()
 	console.log(results.indexOf("flash verified") > -1);
 	console.log(results.length);
-	//console.log(html);
+	console.log(html);
 	res.json(results);		
 });
