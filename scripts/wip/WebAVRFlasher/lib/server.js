@@ -27,9 +27,9 @@ server.post('/flash', function (req, res) {
 
 	var exec = require('child_process').execSync;
 	var download = exec('wget https://raw.githubusercontent.com/grbl/grbl-builds/master/builds/grbl_v0_9j_atmega328p_16mhz_115200.hex -O firmware.hex')
-	var results = exec('avrdude -v -c arduino -p ATMEGA328P -P /dev/ttyAMA0 -b 115200 -U flash:w:firmware.hex').toString()
-	console.log(results.indexOf("flash verified") > -1);
-	console.log(results.length);
-	console.log(html);
+	var flash-results = exec('avrdude -v -c arduino -p ATMEGA328P -P /dev/ttyAMA0 -b 115200 -U flash:w:firmware.hex').toString()
+	console.log(flash-results.indexOf("flash verified") > -1);
+	console.log(flash-results.length);
+	console.log(flash-results);
 	res.json(results);		
 });
