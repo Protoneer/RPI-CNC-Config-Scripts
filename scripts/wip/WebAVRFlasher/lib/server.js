@@ -12,14 +12,31 @@ server.set('view engine', 'ejs');
 server.use(express.static('lib/static')); 			// Static folder
 server.use(bodyParser.urlencoded({extended: true})); 
 
+// File uploads
+var multer  =   require('multer');
+var storage =   multer.diskStorage({
+  destination: function (req, file, callback) {
+    callback(null, __dirname + '/uploads');
+  },
+  filename: function (req, file, callback) {
+    callback(null, 'firmware.hex');
+  }
+});
+var upload = multer({ storage : storage}).single('firmware');
+
+
 // Routes
 server.get('/', function (req, res) {
 	res.render('pages/index');
 });
 
 server.post('/upload', function (req, res) {
-	var results = {"Status":"OK"};	
-	res.json(results);		
+    upload(req,res,function(err) {
+        if(err) {
+			return res.json({"Status":"ERROR"});
+        }
+		res.json({"Status":"OK"});
+    });
 });
 
 server.post('/flash', function (req, res) {
