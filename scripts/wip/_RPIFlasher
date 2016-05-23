@@ -1,0 +1,11 @@
+# Upload Bootloader
+## Write Fuses
+sudo avrdude -s -c avrispmkII -v -p m328p -e -U efuse:w:0x05:m -U hfuse:w:0xDA:m -U lfuse:w:0xFF:m
+
+##Program with AVRISPMKII
+sudo avrdude -c avrispmkII -v -p atmega328p -e -U flash:w:optiboot_atmega328.hex
+
+
+
+# Flashes the ATMEGA
+avrdude -v -c arduino -p ATMEGA328P -P /dev/ttyAMA0 -b 115200 -U flash:w:grbl_v0_9i_atmega328p_16mhz_115200.hex
