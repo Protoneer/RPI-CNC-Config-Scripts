@@ -1,0 +1,5 @@
+
+
+
+# Flashes the ATMEGA
+avrdude -v -c arduino -p ATMEGA328P -P /dev/ttyAMA0 -b 115200 -U flash:w:grbl_v0_9i_atmega328p_16mhz_115200.hex
