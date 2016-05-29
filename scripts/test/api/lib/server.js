@@ -73,8 +73,9 @@ function flash(firmware){
 */
 
 	const execSync = require('child_process').execSync;
-	code = execSync('node -v');
-	return code;
+	execSync('node -v');
+	console.log(execSync.stdout);
+	return code.toString;
 
 
 };
