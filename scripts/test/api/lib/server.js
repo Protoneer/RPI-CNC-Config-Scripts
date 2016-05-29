@@ -10,9 +10,20 @@ server.set('view engine', 'ejs');
 server.use(express.static(__dirname + '/static')); 			// Static folder
 
 
-
+var testEnabled = false;
 
 // Routes
+server.get('/api/enable', function (req, res) {
+	res.send(testEnabled);
+});
+server.post('/api/enable', function (req, res) {
+	res.send(testEnabled);
+});
+
+
+
+
+/*
 server.get('/', function (req, res) {
 	res.send('Home!');
 });
@@ -33,3 +44,4 @@ server.get('/json', function (req, res) {
 server.get('/index.html', function (req, res) {
 	res.render('pages/index');
 });
+*/
