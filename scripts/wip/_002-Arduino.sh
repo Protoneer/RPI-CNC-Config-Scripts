@@ -5,6 +5,13 @@ https://downloads.arduino.cc/arduino-1.6.10-linuxarm.tar.xz
 tar xf arduino-1.6.10-linuxarm.tar.xz
 rm arduino-1.6.10-linuxarm.tar.xz
 
+cd ~
+cd arduino-1.6.10/hardware/tools/avr/bin
+sudo mv arduino-1.6.10/hardware/tools/avr/bin/avrdude arduino-1.6.10/hardware/tools/avr/bin/avrdude-original
+wget https://raw.githubusercontent.com/Protoneer/avrdude-rpi/master/autoreset
+wget https://raw.githubusercontent.com/Protoneer/avrdude-rpi/master/avrdude-autoreset
+sudo ln -s avrdude-autoreset avrdude
+sudo chmode 777 avrdude
 
 
 # This bit is not working yet.
