@@ -12,6 +12,7 @@ sudo mv arduino-1.6.10/hardware/tools/avr/bin/avrdude arduino-1.6.10/hardware/to
 # Need local copies and time to 15ms
 wget https://raw.githubusercontent.com/Protoneer/avrdude-rpi/master/autoreset
 wget https://raw.githubusercontent.com/Protoneer/avrdude-rpi/master/avrdude-autoreset
+# Fix path in avrdude-autoreset
 sudo ln -s avrdude-autoreset avrdude
 sudo chmod 777 avrdude
 
