@@ -7,11 +7,27 @@ tar xf arduino-1.6.10-linuxarm.tar.xz
 rm arduino-1.6.10-linuxarm.tar.xz
 
 
+cd arduino-1.6.10/hardware/tools
+mkdir avr-rpi
+cp -ra avr/. avr-rpi/
+
+cd avr-rpi/bin
+sudo mv avrdude avrdude-original
+wget https://raw.githubusercontent.com/Protoneer/avrdude-rpi/master/autoreset
+wget https://raw.githubusercontent.com/Protoneer/avrdude-rpi/master/avrdude-autoreset
+sudo ln -s avrdude-autoreset avrdude
+sudo chmod 777 avrdude
+sudo chmod 777 autoreset
+
+
+
+
+#------------------------------
+
+
 cd arduino-1.6.10/hardware/tools/avr/bin
 sudo mv arduino-1.6.10/hardware/tools/avr/bin/avrdude arduino-1.6.10/hardware/tools/avr/bin/avrdude-original
 # Need local copies and time to 15ms
-wget https://raw.githubusercontent.com/Protoneer/avrdude-rpi/master/autoreset
-wget https://raw.githubusercontent.com/Protoneer/avrdude-rpi/master/avrdude-autoreset
 # Fix path in avrdude-autoreset
 sudo ln -s avrdude-autoreset avrdude
 sudo chmod 777 avrdude
