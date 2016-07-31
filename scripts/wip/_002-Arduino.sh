@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sudo apt-get install -y python-dev python-rpi.gpio
+
 # install Aruino
 cd  ~
 wget https://downloads.arduino.cc/arduino-1.6.10-linuxarm.tar.xz
