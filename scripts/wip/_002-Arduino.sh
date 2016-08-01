@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Good Article on serial issue. http://spellfoundry.com/2016/05/29/configuring-gpio-serial-port-raspbian-jessie-including-pi-3/
+
 sudo apt-get install -y python-dev python-rpi.gpio
 
 # install Aruino
