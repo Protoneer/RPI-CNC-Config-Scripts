@@ -1,6 +1,6 @@
 echo "dtoverlay=pi3-miniuart-bt" >> /boot/config.txt
 echo "enable_uart=1" >> /boot/config.txt
-systemctl disable hciuart
+sudo systemctl disable hciuart
 sudo shutdown -r now
 
 
