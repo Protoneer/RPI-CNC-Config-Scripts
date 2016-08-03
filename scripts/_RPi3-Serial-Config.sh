@@ -1,5 +1,5 @@
-echo "dtoverlay=pi3-miniuart-bt" >> /boot/config.txt
-echo "enable_uart=1" >> /boot/config.txt
+sudo echo "dtoverlay=pi3-miniuart-bt" >> /boot/config.txt
+sudo echo "enable_uart=1" >> /boot/config.txt
 sudo systemctl disable hciuart
 
 sudo sed -i 's/ console=serial0,115200//g' /boot/cmdline.txt
