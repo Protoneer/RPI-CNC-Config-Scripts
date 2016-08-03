@@ -1,4 +1,5 @@
 #!/bin/bash
+#  chmod +x filename
 
 sudo echo "dtoverlay=pi3-miniuart-bt" >> /boot/config.txt
 sudo echo "enable_uart=1" >> /boot/config.txt
