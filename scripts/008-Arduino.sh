@@ -1,51 +1,20 @@
 #!/bin/bash
 
-# Good Article on serial issue. http://spellfoundry.com/2016/05/29/configuring-gpio-serial-port-raspbian-jessie-including-pi-3/
-
 sudo apt-get install -y python-dev python-rpi.gpio
 
 # install Aruino
-cd  ~
-wget https://downloads.arduino.cc/arduino-1.6.10-linuxarm.tar.xz
-tar xf arduino-1.6.10-linuxarm.tar.xz
-rm arduino-1.6.10-linuxarm.tar.xz
+wget https://downloads.arduino.cc/arduino-1.6.10-linuxarm.tar.xz -P ~
+tar xf ~/arduino-1.6.10-linuxarm.tar.xz
+rm ~/arduino-1.6.10-linuxarm.tar.xz
+
+# Install avrdude-rpi
+cp autoreset2560 ~/arduino-1.6.10/hardware/tools/avr/bin/
+cp autoreset328 ~/arduino-1.6.10/hardware/tools/avr/bin/
+cp avrdude-autoreset ~/arduino-1.6.10/hardware/tools/avr/bin/
+sudo mv ~/arduino-1.6.10/hardware/tools/avr/bin/avrdude ~/arduino-1.6.10/hardware/tools/avr/bin/avrdude-original
+sudo ln -s ~/arduino-1.6.10/hardware/tools/avr/bin/avrdude-autoreset ~/arduino-1.6.10/hardware/tools/avr/bin/avrdude
 
 
-cd ~/arduino-1.6.10/hardware/tools/avr/bin
-# At a later stage we add a special AVR-RPI
-# #mkdir avr-rpi
-# #cp -ra avr/. avr-rpi/
-# #cd avr-rpi/bin
-
-#cd avr/bin
-
-sudo mv avrdude avrdude-original
-wget https://raw.githubusercontent.com/Protoneer/avrdude-rpi/master/autoreset
-wget https://raw.githubusercontent.com/Protoneer/avrdude-rpi/master/avrdude-autoreset
-sudo ln -s avrdude-autoreset avrdude
-sudo chmod 777 avrdude
-sudo chmod 777 autoreset
-
-
-
-
-#------------------------------
-
-
-#cd ~/arduino-1.6.10/hardware/tools/avr/bin
-#sudo mv arduino-1.6.10/hardware/tools/avr/bin/avrdude arduino-1.6.10/hardware/tools/avr/bin/avrdude-original
-# Need local copies and time to 15ms
-# Fix path in avrdude-autoreset
-#sudo ln -s avrdude-autoreset avrdude
-#sudo chmod 777 avrdude
-
-
-# This bit is not working yet.
-#cat 'KERNEL=="ttyAMA0",SYMLINK+="ttyS0" GROUP="dialout"'  >> '/etc/udev/rules.d/99-tty.rules'
-#cat 'KERNEL=="ttyACM0",SYMLINK+="ttyS1" GROUP="dialout"'  >> '/etc/udev/rules.d/99-tty.rules'
-
-
-# This link will help with setting up above : http://spellfoundry.com/sleepy-pi/setting-arduino-ide-raspbian/#Step_3_Link_the_Serial_port_to_the_Arduino_IDE
-
-
-
+sudo chmod +x ~/arduino-1.6.10/hardware/tools/avr/bin/avrdude
+sudo chmod +x ~/arduino-1.6.10/hardware/tools/avr/bin/autoreset328
+sudo chmod +x ~/arduino-1.6.10/hardware/tools/avr/bin/autoreset2560
