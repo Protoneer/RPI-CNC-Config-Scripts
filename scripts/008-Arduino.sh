@@ -11,13 +11,13 @@ tar xf arduino-1.6.10-linuxarm.tar.xz
 rm arduino-1.6.10-linuxarm.tar.xz
 
 
-cd arduino-1.6.10/hardware/tools
+cd ~/arduino-1.6.10/hardware/tools/avr/bin
 # At a later stage we add a special AVR-RPI
 # #mkdir avr-rpi
 # #cp -ra avr/. avr-rpi/
 # #cd avr-rpi/bin
 
-cd avr/bin
+#cd avr/bin
 
 sudo mv avrdude avrdude-original
 wget https://raw.githubusercontent.com/Protoneer/avrdude-rpi/master/autoreset
