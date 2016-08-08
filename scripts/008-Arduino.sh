@@ -32,12 +32,12 @@ sudo chmod 777 autoreset
 #------------------------------
 
 
-cd ~/arduino-1.6.10/hardware/tools/avr/bin
-sudo mv arduino-1.6.10/hardware/tools/avr/bin/avrdude arduino-1.6.10/hardware/tools/avr/bin/avrdude-original
+#cd ~/arduino-1.6.10/hardware/tools/avr/bin
+#sudo mv arduino-1.6.10/hardware/tools/avr/bin/avrdude arduino-1.6.10/hardware/tools/avr/bin/avrdude-original
 # Need local copies and time to 15ms
 # Fix path in avrdude-autoreset
-sudo ln -s avrdude-autoreset avrdude
-sudo chmod 777 avrdude
+#sudo ln -s avrdude-autoreset avrdude
+#sudo chmod 777 avrdude
 
 
 # This bit is not working yet.
