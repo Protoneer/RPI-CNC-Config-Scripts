@@ -1,0 +1,47 @@
+#!/usr/bin/python
+
+import RPi.GPIO as GPIO
+import sys, os, re, time, fcntl
+import errno
+
+fd = sys.stdin.fileno()
+fl = fcntl.fcntl(fd, fcntl.F_GETFL)
+fcntl.fcntl(fd, fcntl.F_SETFL, fl | os.O_NONBLOCK)
+
+GPIO.setwarnings(False)
+GPIO.setmode(GPIO.BOARD)
+dtr = re.compile('.+TIOCM_DTR.+')
+start = time.time()
+pin = 11
+GPIO.setup(pin, GPIO.OUT)
+GPIO.output(pin, GPIO.HIGH)
+
+def reset():
+  GPIO.output(pin, GPIO.LOW)
+  #time.sleep(0.32)
+  time.sleep(0.15)
+  GPIO.output(pin, GPIO.HIGH)
+
+def process():
+  while True:
+    try: 
+      duration = time.time() - start
+      input = sys.stdin.readline().strip()
+      if input is None: # == "":
+        input = sys.stdin.readline().strip()
+      if dtr.match(input):
+        reset()
+        return
+      elif duration > 5000:
+        return
+    except Exception as e:
+      if hasattr(e, 'errno'):
+	if e.errno != 11: # Ignore resource unavailable
+         raise
+      else:
+        raise
+
+process()
+print "avrdude-original: Using autoreset DTR on GPIO Pin " +str(pin)
+GPIO.cleanup()
+exit
