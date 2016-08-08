@@ -1,2 +1,0 @@
-Create minicom shortcut on desktop
-minicom -b 115200 -o -D Port_Name
