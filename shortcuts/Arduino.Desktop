@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Arduino 1.6.10
+Comment=Arduino 1.6.10
+Exec=/home/pi/arduino-1.6.10/arduino
+Icon=bCNC.png
+Terminal=false
+StartupNotify=false
+Name[en_US]=Arduino
