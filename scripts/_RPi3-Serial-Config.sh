@@ -5,8 +5,6 @@ sudo sh -c "echo 'dtoverlay=pi3-miniuart-bt' >> /boot/config.txt"
 sudo sh -c "echo 'enable_uart=1' >> /boot/config.txt"
 sudo systemctl disable hciuart
 
-sudo sed -i 's/ console=serial0,115200//g' /boot/cmdline.txt
-
 # New os uses Serial0
 # good read - http://spellfoundry.com/2016/05/29/configuring-gpio-serial-port-raspbian-jessie-including-pi-3/
 
