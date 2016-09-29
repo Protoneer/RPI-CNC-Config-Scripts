@@ -11,3 +11,8 @@ sudo echo "0" > /sys/class/gpio/gpio18/value
 echo "17" > /sys/class/gpio/export
 sudo echo "out" > /sys/class/gpio/gpio17/direction
 sudo echo "1" > /sys/class/gpio/gpio17/value
+
+# Usage:
+# lpc21isp -wipe DFU-Bootloader.hex /dev/ttyACM0 230400 12000
+
+
