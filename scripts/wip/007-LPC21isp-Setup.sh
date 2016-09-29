@@ -1,3 +1,10 @@
+https://github.com/Protoneer/lpc21isp
+make to build
+./lpc21isp to  run
+
+
+
+
 ##### Installs LPC ISP and setup pin 17-18
 
 sudo apt-get install lpc21isp
