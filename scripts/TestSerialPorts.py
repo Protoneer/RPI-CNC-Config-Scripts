@@ -1,3 +1,9 @@
+"""
+How to use: Create a loop back(Short with a jumper) on the Serial Port we are trying to find.
+
+This script will send a character to each serial port and if it receives it back report it as success.
+
+"""
 import sys
 import glob
 import time
@@ -50,12 +56,13 @@ def TestSerial(sport):
 	except:
 		out = ''
 	
-	return 'MPos' in out and 'WPos' in out
+	return '?' in out
 
-#print 'Serial Port :' + str(serial_ports())	
+print 'Serial Ports :' + str(serial_ports())	
 
+for port in serialPortList:
+	print str(port) + ' : ' + str(TestSerial(port))
+	
 for port in serial_ports():
 	print str(port) + ' : ' + str(TestSerial(port))
 	
-for port in serialPortList:
-	print str(port) + ' : ' + str(TestSerial(port))
