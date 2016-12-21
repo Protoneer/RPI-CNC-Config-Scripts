@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Protoneer Forums
+Comment=Protoneer Forums
+Exec=epiphany http://forum.protoneer.co.nz
+Icon=lib/icons/32x32/apps/arduino.png
+Terminal=false
+StartupNotify=false
+Name[en_US]=Protoneer Forums
