@@ -1,5 +1,3 @@
-sudo apt-get update
-
 # install java
 sudo apt-get install openjdk-7-jre -y
 sudo apt-get install librxtx-java -y
