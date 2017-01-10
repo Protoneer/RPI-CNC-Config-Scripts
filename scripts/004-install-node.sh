@@ -17,3 +17,5 @@ wget https://nodejs.org/dist/v6.9.4/node-v6.9.4-linux-armv6l.tar.gz
 tar -xvf node-v6.9.4-linux-armv6l.tar.gz
 cd node-v6.9.4-linux-armv6l
 sudo cp -R * /usr/local/
+
+sudo shutdown -r now
