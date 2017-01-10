@@ -1,1 +1,3 @@
 
+cd /home/pi/LaserWeb3
+node server.js   
