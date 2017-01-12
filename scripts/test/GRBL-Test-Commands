@@ -1,0 +1,23 @@
+// Program firmware
+wget https://github.com/gnea/grbl/releases/download/v1.1e.20161219/grbl_v1.1e.20161219.hex
+/home/pi/arduino-1.6.10/hardware/tools/avr/bin/avrdude -C/home/pi/arduino-1.6.10/hardware/tools/avr/etc/avrdude.conf -v -patmega328p -carduino -P/dev/ttyAMA0 -b115200 -D -Uflash:w:grbl_v1.1e.20161219.hex:i
+
+
+
+// Test X Y Z
+G0X100Y100Z100
+G0X0Y0Z0
+
+// Test Endstops
+$21=1
+
+// Test Motor Controls
+S1000
+M3
+M4
+M5
+
+
+// Test Coolant
+M8
+M9
