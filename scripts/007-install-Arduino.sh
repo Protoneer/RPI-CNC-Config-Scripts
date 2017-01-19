@@ -18,3 +18,6 @@ sudo ln -s ~/arduino-1.8.1/hardware/tools/avr/bin/avrdude-autoreset ~/arduino-1.
 sudo chmod +x ~/arduino-1.8.1/hardware/tools/avr/bin/avrdude
 sudo chmod +x ~/arduino-1.8.1/hardware/tools/avr/bin/autoreset328
 sudo chmod +x ~/arduino-1.8.1/hardware/tools/avr/bin/autoreset2560
+
+# Make AVRDUDE available for all
+sudo ln -s -T ~/arduino-1.8.1/hardware/tools/avr/bin/avrdude /usr/local/bin/avrdude
