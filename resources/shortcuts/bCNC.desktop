@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=bCNC
+Comment=bCNC Controller
+Exec=/home/pi/bCNC/bCNC
+Icon=bCNC.png
+Terminal=false
+StartupNotify=false
+Name[en_US]=bCNC

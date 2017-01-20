@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Start CNC.JS(Run once, wait for terminal window to open)
+Version=1.0
+Comment=Launches application
+Exec=/home/pi/.npm/bin/cnc
+Icon=/usr/share/pixmaps/openbox.xpm
+Terminal=true
+Type=Application
+Categories=Education
