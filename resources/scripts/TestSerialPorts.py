@@ -1,9 +1,9 @@
-"""
-How to use: Create a loop back(Short with a jumper) on the Serial Port we are trying to find.
+print "How to use: Create a loop back(Short with a jumper) on the Serial Port we are trying to find."
+print ""
+print "This script will send a character to each serial port and if it receives it back report it as success."
+print ""
+print "  Hint : Raspberry Pi short GPIO14 and GPIO15. They are the hardware serial pins we want to test."
 
-This script will send a character to each serial port and if it receives it back report it as success.
-
-"""
 import sys
 import glob
 import time
