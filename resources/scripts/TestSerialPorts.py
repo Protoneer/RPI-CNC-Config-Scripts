@@ -65,4 +65,5 @@ for port in serialPortList:
 	
 for port in serial_ports():
 	print str(port) + ' : ' + str(TestSerial(port))
-	
+
+input("Press Enter to exit...")	
