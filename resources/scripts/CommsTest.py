@@ -4,9 +4,9 @@ import sys
 import smtplib
 import os
 
-os.system("avrdude -v -c arduino -p ATMEGA328P -P /dev/ttyAMA0 -b 115200 -U flash:w:/app/cnc-test/grbl_v1.1e.20170114.hex")
+os.system("/home/pi/RPI-CNC-Config-Scripts/scripts/008-GRBL-V1.1E.sh")
 time.sleep(2)
-os.system("avrdude -v -c arduino -p ATMEGA328P -P /dev/ttyAMA0 -b 115200 -U flash:w:/app/cnc-test/grbl_v1.1e.20170114.hex")
+os.system("/home/pi/RPI-CNC-Config-Scripts/scripts/008-GRBL-V1.1E.sh")
 time.sleep(2)
 
 ser = serial.Serial('/dev/ttyAMA0',115200,timeout=1)
