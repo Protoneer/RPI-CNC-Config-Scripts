@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=ChiliPeppr-Serial-Port-JSON-Server
+Version=1.0
+Comment=ChiliPeppr-Serial-Port-JSON-Server
+Exec=/home/pi/serial-port-json-server-1.88_linux_arm $ ./serial-port-json-server
+Terminal=true
+Type=Application
