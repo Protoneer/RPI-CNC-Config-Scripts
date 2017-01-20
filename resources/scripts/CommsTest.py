@@ -28,11 +28,11 @@ print(ser.readline())
 maxTries = 900
 
 def email(subject,msg):
-	fromaddr = 'krugercreations@gmail.com'
-	toaddrs  = 'krugercreations@gmail.com'
+	fromaddr = '???'
+	toaddrs  = '???'
 
 	# Credentials (if needed)
-	username = 'krugercreations@gmail.com'
+	username = '???'
 	password = 'othvpmdvobguhoyw'
 
 	# The actual mail send
