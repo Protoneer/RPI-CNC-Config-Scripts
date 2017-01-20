@@ -1,1 +1,7 @@
-
+[Desktop Entry]
+Name=TestSerialPort
+Version=1.0
+Comment=TestSerialPort
+Exec=python /home/pi/RPI-CNC-Config-Scripts/resources/scripts/TestSerialPorts.py
+Terminal=true
+Type=Application
