@@ -4,6 +4,4 @@ Type=Application
 Name=LaserWeb3 Server
 Comment=LaserWeb3 Server
 Exec=node /home/pi/LaserWeb3/server.js
-Terminal=false
-StartupNotify=false
-Name[en_US]=LaserWeb3 Server
+Terminal=true
