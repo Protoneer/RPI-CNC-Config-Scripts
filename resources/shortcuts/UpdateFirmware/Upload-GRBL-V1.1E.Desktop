@@ -2,6 +2,6 @@
 Name=Upload-GRBL-V1.1E
 Version=1.0
 Comment=Upload-GRBL-V1.1E
-Exec=/home/pi/RPI-CNC-Config-Scripts/scripts/008-GRBL-V1.1E.sh
+Exec=/home/pi/RPI-CNC-Config-Scripts/resources/scripts/Run-Flash-GRBL-V1.1E.sh
 Terminal=true
 Type=Application
