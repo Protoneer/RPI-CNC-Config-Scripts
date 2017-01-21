@@ -2,6 +2,6 @@
 Name=Upload-GRBL-Latest
 Version=1.0
 Comment=Upload-GRBL-Latest
-Exec=/home/pi/RPI-CNC-Config-Scripts/scripts/008-GRBL-Latest.sh
+Exec=/home/pi/RPI-CNC-Config-Scripts/resources/scripts/Run-Flash-GRBL-Latest.sh
 Terminal=true
 Type=Application
