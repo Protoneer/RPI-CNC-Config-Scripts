@@ -1,1 +1,7 @@
 https://www.htpcguides.com/easy-resize-and-back-up-raspberry-pi-sd-card-with-ubuntu/
+
+use gparted to resize to 6gb
+
+copy image to local driver via
+
+
