@@ -3,5 +3,6 @@ https://www.htpcguides.com/easy-resize-and-back-up-raspberry-pi-sd-card-with-ubu
 use gparted to resize to 6gb
 
 copy image to local driver via
+sudo dd if=/dev/mmcblk0 of=/media/ubuntu/Windows8_OS/raspberrypibackup.img bs=1M count=6100
 
 
