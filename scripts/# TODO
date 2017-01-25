@@ -1,0 +1,4 @@
+Fix issue with firmware updates that does not always work on the first try.
+REmove Piping warning message.
+
+REduce the image size
