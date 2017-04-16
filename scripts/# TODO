@@ -4,3 +4,5 @@ REmove Piping warning message.
 REduce the image size
 
 Install SAMD Arduino Package
+
+Update rpi3 serial script to delete it self before restart. Give notice of restart
