@@ -21,5 +21,5 @@ sudo chmod +x ~/arduino-1.8.5/hardware/tools/avr/bin/autoreset2560
 
 # Make AVRDUDE available for all
 sudo ln -s -T ~/arduino-1.8.5/hardware/tools/avr/bin/avrdude /usr/local/bin/avrdude
-#  export PATH=$PATH:~/arduino-1.8.1/hardware/tools/avr/bin
+#  export PATH=$PATH:~/arduino-1.8.5/hardware/tools/avr/bin
 
