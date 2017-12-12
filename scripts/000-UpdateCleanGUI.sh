@@ -11,6 +11,7 @@ sudo apt-get install --no-install-recommends xinit -y
 sudo apt-get install raspberrypi-ui-mods -y
 sudo apt-get install --no-install-recommends rpi-chromium-mods -y
 sudo apt-get install xrdp -y
+sudo apt-get install git -y
 
 # Clean out cache
 sudo apt-get clean
