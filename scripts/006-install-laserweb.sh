@@ -1,7 +1,13 @@
-cd ~
-git clone https://github.com/openhardwarecoza/LaserWeb3.git
-cd LaserWeb3
-npm install
+cd /home/pi
+git clone https://github.com/LaserWeb/lw.comm-server.git
+cd lw.comm-server
+sudo npm install serialport --unsafe-perm --build-from-source
+sudo npm install
+
+#cd ~
+#git clone https://github.com/openhardwarecoza/LaserWeb3.git
+#cd LaserWeb3
+#npm install
 
 
 # Old
