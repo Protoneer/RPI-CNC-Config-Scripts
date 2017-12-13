@@ -4,3 +4,4 @@ Arduino set verbatim on
 Arduino set serial port to correct port
 Bcnc Set serial port
 
+raspi-congif set gui to show on startup
