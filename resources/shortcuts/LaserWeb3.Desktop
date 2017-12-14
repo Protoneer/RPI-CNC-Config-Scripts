@@ -1,7 +1,0 @@
-[Desktop Entry]
-Version=1.0
-Type=Application
-Name=LaserWeb3 Server
-Comment=LaserWeb3 Server
-Exec=/home/pi/RPI-CNC-Config-Scripts/resources/scripts/RunLaserWeb3.sh
-Terminal=true

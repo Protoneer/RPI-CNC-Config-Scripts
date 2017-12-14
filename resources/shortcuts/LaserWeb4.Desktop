@@ -1,0 +1,7 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=LaserWeb4 Server
+Comment=LaserWeb4 Server
+Exec=/home/pi/RPI-CNC-Config-Scripts/resources/scripts/RunLaserWeb4.sh
+Terminal=true
