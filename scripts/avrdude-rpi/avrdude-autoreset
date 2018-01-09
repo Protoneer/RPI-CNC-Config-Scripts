@@ -2,11 +2,11 @@
 if [[ $@ == *atmega2560* && $@ == */dev/ttyAMA0* ]]
 then
   echo "RPI-ATMega2560";
-  sudo strace -o "|/home/pi/arduino-1.8.1/hardware/tools/avr/bin/autoreset2560" -eioctl /home/pi/arduino-1.8.1/hardware/tools/avr/bin/avrdude-original $@
+  sudo strace -o "|/home/pi/arduino-1.8.5/hardware/tools/avr/bin/autoreset2560" -eioctl /home/pi/arduino-1.8.5/hardware/tools/avr/bin/avrdude-original $@
 elif [[ $@ == *atmega328* && $@ == */dev/ttyAMA0* ]]
 then
   echo "RPI-ATMega328";
-  sudo strace -o "|/home/pi/arduino-1.8.1/hardware/tools/avr/bin/autoreset328" -eioctl /home/pi/arduino-1.8.1/hardware/tools/avr/bin/avrdude-original $@
+  sudo strace -o "|/home/pi/arduino-1.8.5/hardware/tools/avr/bin/autoreset328" -eioctl /home/pi/arduino-1.8.5/hardware/tools/avr/bin/avrdude-original $@
 else
-  sudo /home/pi/arduino-1.8.1/hardware/tools/avr/bin/avrdude-original $@
+  sudo /home/pi/arduino-1.8.5/hardware/tools/avr/bin/avrdude-original $@
 fi
