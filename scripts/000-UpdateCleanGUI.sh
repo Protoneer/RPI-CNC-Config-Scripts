@@ -18,5 +18,3 @@ sudo apt-get -y remove --purge wolfram-engine
 
 # Clean out cache
 sudo apt-get clean
-
-sudo shutdown -r now
