@@ -1,7 +1,7 @@
 # https://learn.adafruit.com/programming-microcontrollers-using-openocd-on-raspberry-pi/compiling-openocd
 
 sudo apt-get update
-sudo apt-get install git autoconf libtool make pkg-config libusb-1.0-0 libusb-1.0-0-dev
+sudo apt-get install git autoconf libtool make pkg-config libusb-1.0-0 libusb-1.0-0-dev -y
 git clone git://git.code.sf.net/p/openocd/code openocd-code
 cd openocd-code
 ./bootstrap
