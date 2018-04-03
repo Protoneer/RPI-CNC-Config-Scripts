@@ -1,4 +1,6 @@
-# Get the latest Raspbian Lite
+# Remove extras
+sudo apt-get -y remove --purge libreoffice-*
+sudo apt-get -y remove --purge wolfram-engine
 
 # Update
 sudo apt-get -y update
@@ -13,8 +15,6 @@ sudo apt-get -y dist-upgrade
 #sudo apt-get install xrdp -y
 #sudo apt-get install git -y
 
-sudo apt-get -y remove --purge libreoffice-*
-sudo apt-get -y remove --purge wolfram-engine
 
 # Clean out cache
 sudo apt-get clean
