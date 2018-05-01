@@ -14,6 +14,7 @@ sudo systemctl disable hciuart
 sudo systemctl stop serial-getty@ttyS0.service
 sudo systemctl disable serial-getty@ttyS0.service
 
-
+# Remove shortcut 
+sudo rm /home/pi/Desktop/Rpi3SerialConfig.desktop
 
 sudo shutdown -r now
