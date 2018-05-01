@@ -1,6 +1,8 @@
 #!/bin/bash
 #  chmod +x filename
 
+read -p "After the Raspberry Pi settings have been updated the system will restart. Press any key to start..." -n1 -s
+
 sudo sh -c "echo 'dtoverlay=pi3-miniuart-bt' >> /boot/config.txt"
 sudo sh -c "echo 'enable_uart=1' >> /boot/config.txt"
 sudo systemctl disable hciuart
