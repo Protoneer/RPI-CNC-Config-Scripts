@@ -1,6 +1,10 @@
 # install java
-sudo apt-get install openjdk-7-jre -y
-sudo apt-get install librxtx-java -y
+# Java 7
+#sudo apt-get install openjdk-7-jre -y
+#sudo apt-get install librxtx-java -y
+
+# Java 8
+sudo apt install openjdk-8-jdk openjdk-8-jre -y
 
 cd ~
 mkdir ugs
