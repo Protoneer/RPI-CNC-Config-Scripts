@@ -18,7 +18,7 @@ sudo apt-get -y remove nodejs
 #cd node-v8.11.1-linux-armv6l
 #sudo cp -R * /usr/local/
 
-curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
 sudo apt-get install -y nodejs
 sudo apt-get install gcc g++ make
 curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
