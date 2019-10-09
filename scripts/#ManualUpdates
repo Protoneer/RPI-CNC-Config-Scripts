@@ -1,7 +1,7 @@
 Sort desktop icons by name
 Set desktop backround black
 Arduino set verbatim on
-Arduino set serial port to correct port
+Arduino set serial port to correct port  - dev/ttyAMA0
 Bcnc Set serial port
 
 
