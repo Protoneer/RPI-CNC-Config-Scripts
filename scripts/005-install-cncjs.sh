@@ -7,4 +7,5 @@ npm config set unsafe-perm true
 npm install -g socket.io
 npm install -g socket.io-parser
 npm install -g cncjs
+#sudo npm install --unsafe-perm -g cncjs
 export PATH=$PATH:~/.npm/bin/
