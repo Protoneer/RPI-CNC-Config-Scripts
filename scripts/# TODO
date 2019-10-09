@@ -10,7 +10,7 @@ REduce the image size
 
 Install SAMD Arduino Package
 
-Update rpi3 serial script to delete it self before restart. Give notice of restart
+# Update rpi3 serial script to delete it self before restart. Give notice of restart  -- Done
 
 Add 
 https://github.com/Denvi/Candle/blob/master/readme.md
