@@ -1,0 +1,2 @@
+1. create ssh file on the Boot partition. -Adds SSH access
+2. Remove the "init=/usr/lib/raspi-config/init_resize.sh" from the cmdline.txt file in the boot partition. Stops the image from expanding.
