@@ -4,8 +4,8 @@ sudo apt-get install -y python-dev python-rpi.gpio
 
 # install Aruino
 wget https://downloads.arduino.cc/arduino-1.8.10-linuxarm.tar.xz -P ~
-mkdir ~/arduino
 tar xf ~/arduino-1.8.10-linuxarm.tar.xz -C ~/arduino
+mv arduino-1.8.10 arduino
 rm ~/arduino-1.8.10-linuxarm.tar.xz
 
 # Install avrdude-rpi
