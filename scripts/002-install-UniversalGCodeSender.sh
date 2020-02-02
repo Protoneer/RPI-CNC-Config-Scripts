@@ -17,3 +17,5 @@ unzip ugs.zip
 jar -xf UniversalGcodeSender.jar
 
 chmod +x start.sh
+
+rm ugs.zip
