@@ -1,3 +1,4 @@
+cd ~
 sudo apt-get -y remove nodejs
 
 #RPI 3-4
