@@ -17,4 +17,6 @@ sudo cp -R * /usr/local/
 
 cd ~
 rm node-v8.11.1-linux-armv6l.tar.xz
+rm node-v8.11.1-linux-armv6l/ -r
 rm node-v8.11.1-linux-armv7l.tar.xz
+rm node-v8.11.1-linux-armv7l/ -r
