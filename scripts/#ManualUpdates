@@ -1,3 +1,7 @@
+create ssh file on boot disk
+remove "console=serial0,115200" from /boot/cmdline.txt
+
+
 Sort desktop icons by name
 Set desktop backround black
 Arduino set verbatim on
