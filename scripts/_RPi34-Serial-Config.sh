@@ -10,7 +10,7 @@ sudo systemctl disable hciuart
 # New os uses Serial0
 # good read - http://spellfoundry.com/2016/05/29/configuring-gpio-serial-port-raspbian-jessie-including-pi-3/
 
-# RPI 3 only
+# RPI 3 and 4 only
 sudo systemctl stop serial-getty@ttyS0.service
 sudo systemctl disable serial-getty@ttyS0.service
 
