@@ -1,6 +1,6 @@
 // Program firmware
 wget https://github.com/gnea/grbl/releases/download/v1.1e.20161219/grbl_v1.1e.20161219.hex
-/home/pi/arduino-1.6.10/hardware/tools/avr/bin/avrdude -C/home/pi/arduino-1.6.10/hardware/tools/avr/etc/avrdude.conf -v -patmega328p -carduino -P/dev/ttyAMA0 -b115200 -D -Uflash:w:grbl_v1.1e.20161219.hex:i
+/home/pi/arduino/hardware/tools/avr/bin/avrdude -C/home/pi/arduino/hardware/tools/avr/etc/avrdude.conf -v -patmega328p -carduino -P/dev/ttyAMA0 -b115200 -D -Uflash:w:grbl_v1.1e.20161219.hex:i
 
 
 
