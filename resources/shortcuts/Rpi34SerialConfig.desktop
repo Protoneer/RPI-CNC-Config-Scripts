@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=RPi 3 and 4 Serial Config
+Comment=RPi 3 and 4 Serial Config
+Exec=sudo bash /home/pi/RPI-CNC-Config-Scripts/scripts/_RPi34-Serial-Config.sh
+Icon=bCNC.png
+Terminal=true
+StartupNotify=false
