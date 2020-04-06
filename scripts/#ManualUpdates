@@ -1,5 +1,8 @@
 create ssh file on boot disk
-remove "console=serial0,115200" from /boot/cmdline.txt
+
+from /boot/cmdline.txt remove :
+"console=serial0,115200"
+"init=/usr/lib/raspi-config/init_resize.sh"
 
 
 Sort desktop icons by name
