@@ -3,10 +3,10 @@
 sudo apt-get install -y python-dev python-rpi.gpio
 
 # install Aruino
-wget https://downloads.arduino.cc/arduino-1.8.10-linuxarm.tar.xz -P ~
-tar xf ~/arduino-1.8.10-linuxarm.tar.xz -C ~
-mv ~/arduino-1.8.10 ~/arduino
-rm ~/arduino-1.8.10-linuxarm.tar.xz
+wget https://downloads.arduino.cc/arduino-1.8.12-linuxarm.tar.xz -P ~
+tar xf ~/arduino-1.8.12-linuxarm.tar.xz -C ~
+mv ~/arduino-1.8.12 ~/arduino
+rm ~/arduino-1.8.12-linuxarm.tar.xz
 
 # Install avrdude-rpi
 cp avrdude-rpi/autoreset2560 ~/arduino/hardware/tools/avr/bin/
