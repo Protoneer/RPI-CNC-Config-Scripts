@@ -12,3 +12,11 @@ Arduino set serial port to correct port  - dev/ttyAMA0
 Bcnc Set serial port
 UGCS set port
 
+
+Shrinking the image
+-------------------
+Install Gparted and shrink the partition on a USb SD card converter
+Zip with 7-zip
+Test burning it with RPI burn tool
+
+
