@@ -6,6 +6,8 @@ cp -a ~/RPI-CNC-Config-Scripts/resources/shortcuts/. /home/pi/Desktop/
 # Install utilities to make things easier
 sudo apt-get -y --force-yes install minicom tightvncserver xrdp
 
+sudo apt-get install gparted -y
+
 
 
 # Stop the console from outputting ot hardware serial pins
