@@ -1,0 +1,3 @@
+# python tcp_serial_redirect.py -P 1234 /dev/ttyAMA0 115200
+
+# https://github.com/pyserial/pyserial/blob/master/examples/tcp_serial_redirect.py
